@@ -1,4 +1,19 @@
 export default {
+  leaderboard: {
+    title: "Classification",
+    description: "Champions des entraînements",
+    champion_badge: "🏆 Champion",
+    runner_up_badge: "🥈 Finaliste",
+    third_place_badge: "🥉 Troisième place",
+    workouts: "entraînements",
+    unable_to_load: "Impossible de charger le classement",
+    try_again_later: "Veuillez réessayer plus tard",
+    no_champions_yet: "Pas encore de champions",
+    complete_first_workout: "Complétez votre premier entraînement pour revendiquer le trône !",
+    member_since: "Membre depuis",
+    workouts_per_week: "entraînements/semaine",
+    last_workout: "Dernier entraînement"
+  },
   programs: {
     available_programs: "Programmes disponibles",
     exercises_in_session: "Exercices dans la séance",
@@ -401,6 +416,8 @@ export default {
     workouts_tooltip: "Créer votre propre entraînement",
     premium: "Premium",
     premium_tooltip: "Passer à Premium",
+    leaderboard: "Classement",
+    leaderboard_tooltip: "Voir le classement d'entraînements",
     tools: "Outils",
     tools_tooltip: "Parcourir les outils",
     profile: "Profil",
@@ -1690,6 +1707,7 @@ export default {
     },
   },
   commons: {
+    just_now: "à l'instant",
     signup_with: "S'inscrire avec {provider}",
     signin_with: "Se connecter avec {provider}",
     signup: "S'inscrire",
