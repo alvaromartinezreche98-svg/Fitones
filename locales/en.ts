@@ -403,11 +403,18 @@ export default {
     conversion_flow_title: "Redirecting...",
     conversion_flow_message: "Successfully signed in! Redirecting to checkout...",
     redirecting_to_checkout: "Redirecting to checkout",
+
+    // Premium Gate
+    premium_feature: "Premium Feature",
+    upgrade_to_access_feature: "Upgrade to premium to access this feature",
+    unlock_all_features: "Unlock all features and support development",
   },
   breadcrumbs: {
     home: "Home",
   },
   bottom_navigation: {
+    statistics: "Statistics",
+    statistics_tooltip: "View your statistics",
     programs: "Programs",
     programs_tooltip: "Browse programs",
     workouts: "Workouts",
@@ -1681,6 +1688,8 @@ export default {
     },
   },
   commons: {
+    upgrade_to_premium: "Upgrade to Premium",
+    refresh: "Refresh",
     just_now: "just now",
     signup_with: "Sign up with {provider}",
     signin_with: "Sign in with {provider}",
@@ -1807,6 +1816,90 @@ export default {
     add_to_favorites: "Add to favorites",
     remove_from_favorites: "Remove from favorites",
     favorites: "Favorites",
+  },
+  statistics: {
+    title: "Statistics",
+    page_subtitle: "Track your fitness journey with advanced analytics and personalized insights.",
+    select_exercise: "Select Exercise",
+    active_daily_users: "Active Daily Users",
+    success_rate: "Success Rate",
+    user_rating: "User Rating",
+    
+    // Tabs
+    tabs: {
+      video: "Video",
+      statistics: "Statistics",
+    },
+    
+    // Chart titles and labels
+    weight: "Weight",
+    volume: "Volume",
+    weight_progression: "Weight Progression",
+    weight_progression_chart: "Weight progression chart",
+    weekly_volume: "Weekly Volume",
+    volume_chart: "Volume chart",
+    estimated_1rm: "Estimated 1 Rep Max (1RM)",
+    one_rep_max_chart: "One rep max chart",
+    performance_over_time: "Performance Over Time",
+
+    // Form and controls
+    timeframe: "Timeframe",
+    timeframe_selector: "Timeframe selector",
+    
+    // Timeframes
+    timeframes: {
+      "4weeks": "4 Weeks",
+      "8weeks": "8 Weeks",
+      "12weeks": "12 Weeks",
+      "1year": "1 Year",
+    },
+
+    // Error messages
+    error_loading_data: "Error loading data",
+    error_loading_weight_progression: "Error loading weight progression",
+    error_loading_1rm: "Error loading 1RM data",
+    error_loading_volume: "Error loading volume data",
+
+    // Empty states
+    no_data_yet: "No data yet",
+    start_tracking: "Start tracking to see your progress",
+    no_1rm_data: "No 1RM data available",
+    complete_sets_with_weight: "Complete sets with weight to see your 1 Rep Max (1RM)",
+    no_volume_data: "No volume data available",
+    complete_workouts: "Complete workouts to see your volume",
+
+    // Info and tooltips
+    "1rm_formula_info": "1RM formula information",
+    volume_calculation: "Volume = Weight × Reps × Sets",
+    last_updated: "Last updated: {date}",
+
+    // Premium
+    premium_required: "Premium required to access statistics",
+    
+    // StatisticsPreviewOverlay
+    premium_statistics: "Premium Statistics",
+    premium_statistics_description: "Get detailed insights into your fitness journey with advanced analytics for each exercise.",
+    total_volume: "Total Volume",
+    pr_increase: "PR Increase",
+    weight_progress: "Weight Progress",
+    upgrade_now: "Upgrade Now",
+    rating: "4.8/5 rating",
+    no_ads: "No ads",
+    cancel_anytime: "Cancel anytime",
+    preview_notice: "This is just a preview! 👀",
+    preview_description: "Unlock full access to detailed analytics, progress tracking, and personalized insights.",
+    get_premium_access: "Get Premium Access",
+    
+    // ExercisesBrowser
+    all_equipment: "All Equipment",
+    all_muscles: "All Muscles",
+    search_exercises: "Search Exercises",
+    error_loading_exercises: "Error loading exercises",
+    no_exercises_found: "No exercises found",
+    equipment_label: "Equipment:",
+    primary_muscle_label: "Primary Muscle:",
+    unknown: "Unknown",
+    no_image_available: "No image available",
   },
   heatmap: {
     week_days_short: {
