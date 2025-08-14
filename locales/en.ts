@@ -5,6 +5,8 @@ export default {
     champion_badge: "🏆 Champion",
     runner_up_badge: "🥈 Runner-up",
     third_place_badge: "🥉 Third Place",
+    second_place: "2nd Place",
+    third_place: "3rd Place",
     workouts: "workouts",
     unable_to_load: "Unable to load leaderboard",
     try_again_later: "Please try again later",
@@ -12,7 +14,18 @@ export default {
     complete_first_workout: "Complete your first workout to claim the throne!",
     member_since: "Member since",
     workouts_per_week: "workouts/week",
-    last_workout: "Last workout"
+    last_workout: "Last workout",
+    page_title: "Champions Leaderboard",
+    page_subtitle: "Climb to the top and become a Workout.cool legend",
+    period_all_time: "All Time",
+    period_monthly: "Month",
+    period_weekly: "Week",
+    no_sessions_this_week: "No sessions this week",
+    no_sessions_this_month: "No sessions this month",
+    registered_members_only: "Registered members only",
+    registered_members_description: "Create an account to appear in the leaderboard",
+    reset_timezone: "Europe/Paris Reset",
+    reset_timezone_description: "Weekly and monthly leaderboards reset at midnight Paris time",
   },
   programs: {
     available_programs: "Available programs",
@@ -1688,6 +1701,8 @@ export default {
     },
   },
   commons: {
+    last_activity: "Last activity",
+    registered_on: "Registered on",
     upgrade_to_premium: "Upgrade to Premium",
     refresh: "Refresh",
     just_now: "just now",
@@ -1824,13 +1839,13 @@ export default {
     active_daily_users: "Active Daily Users",
     success_rate: "Success Rate",
     user_rating: "User Rating",
-    
+
     // Tabs
     tabs: {
       video: "Video",
       statistics: "Statistics",
     },
-    
+
     // Chart titles and labels
     weight: "Weight",
     volume: "Volume",
@@ -1845,7 +1860,7 @@ export default {
     // Form and controls
     timeframe: "Timeframe",
     timeframe_selector: "Timeframe selector",
-    
+
     // Timeframes
     timeframes: {
       "4weeks": "4 Weeks",
@@ -1875,7 +1890,7 @@ export default {
 
     // Premium
     premium_required: "Premium required to access statistics",
-    
+
     // StatisticsPreviewOverlay
     premium_statistics: "Premium Statistics",
     premium_statistics_description: "Get detailed insights into your fitness journey with advanced analytics for each exercise.",
@@ -1889,7 +1904,7 @@ export default {
     preview_notice: "This is just a preview! 👀",
     preview_description: "Unlock full access to detailed analytics, progress tracking, and personalized insights.",
     get_premium_access: "Get Premium Access",
-    
+
     // ExercisesBrowser
     all_equipment: "All Equipment",
     all_muscles: "All Muscles",
