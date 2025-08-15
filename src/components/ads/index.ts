@@ -5,5 +5,4 @@ export { VerticalLeftBanner } from "./VerticalLeftBanner";
 export { VerticalRightBanner } from "./VerticalRightBanner";
 export { HorizontalTopBanner } from "./HorizontalTopBanner";
 export { HorizontalBottomBanner } from "./HorizontalBottomBanner";
-export { AdBlockerForPremium } from "./AdBlockerForPremium";
 export { InArticle } from "./InArticle";
