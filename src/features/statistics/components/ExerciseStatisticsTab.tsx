@@ -7,7 +7,6 @@ import { useI18n, useCurrentLocale } from "locales/client";
 import { cn } from "@/shared/lib/utils";
 import { formatDate } from "@/shared/lib/date";
 import { StatisticsTimeframe } from "@/shared/constants/statistics";
-import { PremiumGate } from "@/components/ui/premium-gate";
 import { Loader } from "@/components/ui/loader";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 
@@ -35,8 +34,7 @@ export function ExerciseCharts({ timeframe, exerciseId, unit = "kg", className }
   const hasError = weightProgressionQuery.isError || oneRepMaxQuery.isError || volumeQuery.isError;
 
   return (
-    <PremiumGate className={className} feature="exercise-statistics" upgradeMessage={t("statistics.premium_required")}>
-      <div className={cn("space-y-6", className)}>
+    <div className={cn("space-y-6", className)}>
         {/* Error State */}
         {hasError && (
           <Alert variant="error">
@@ -107,6 +105,6 @@ export function ExerciseCharts({ timeframe, exerciseId, unit = "kg", className }
           })}
         </div>
       </div>
-    </PremiumGate>
+    </div>
   );
 }
