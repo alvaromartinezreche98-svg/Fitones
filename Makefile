@@ -9,8 +9,7 @@ help:
 	@echo "  db-migrate          - Run Prisma migrations"
 	@echo "  db-generate         - Generate Prisma client"
 	@echo "  db-seed             - Seed database with exercises"
-	@echo "  db-seed-leaderboard - Seed database with leaderboard sample data"
-	@echo "  db-seed-all         - Seed everything (exercises + leaderboard)"
+        @echo "  db-seed-all         - Seed database with exercises"
 	@echo ""
 
 
@@ -38,12 +37,8 @@ db-generate:
 db-seed:
 	pnpm run import:exercises-full ./data/sample-exercises.csv
 
-# Seed database with leaderboard data
-db-seed-leaderboard:
-	pnpm run db:seed-leaderboard
-
-# Seed everything (exercises + leaderboard)
-db-seed-all: db-seed db-seed-leaderboard
+# Seed everything (exercises)
+db-seed-all: db-seed
 
 # Start the dev server (with DB, migrate, seed)
 dev: up deps db-migrate db-generate db-seed-all

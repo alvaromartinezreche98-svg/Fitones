@@ -11,17 +11,14 @@ import {
   Calendar,
   Timer,
   Dumbbell,
-  Lock,
   Trophy,
   Users,
   Zap,
   CheckCircle2,
-  Unlock,
   ArrowRight,
 } from "lucide-react";
 
 import { useCurrentLocale, useI18n } from "locales/client";
-import { useIsPremium } from "@/shared/lib/premium/use-premium";
 import { getSlugForLocale } from "@/shared/lib/locale-slug";
 import { ATTRIBUTE_VALUE_TRANSLATION_KEYS, getAttributeValueLabel } from "@/shared/lib/attribute-value-translation";
 import { WelcomeModal } from "@/features/programs/ui/welcome-modal";
@@ -59,7 +56,6 @@ export function ProgramDetailPage({ program, isAuthenticated }: ProgramDetailPag
   const searchParams = useSearchParams();
   const router = useRouter();
   const currentLocale = useCurrentLocale();
-  const isPremium = useIsPremium();
   const programTitle = getProgramTitle(program, currentLocale);
   const programDescription = getProgramDescription(program, currentLocale);
   const currentWeekFull = program.weeks.find((w) => w.weekNumber === selectedWeek);
@@ -209,7 +205,6 @@ export function ProgramDetailPage({ program, isAuthenticated }: ProgramDetailPag
                   {program.participantCount}+
                 </span>
                 {/* TODO: i18n category */}
-                {/* {program.isPremium && <span className="bg-yellow-500 text-white px-3 py-1 rounded-full text-xs font-medium">Premium</span>} */}
               </div>
               <h1 className="text-3xl font-bold mb-2">{programTitle}</h1>
               {/* TODO: i18n category */}
@@ -244,32 +239,6 @@ export function ProgramDetailPage({ program, isAuthenticated }: ProgramDetailPag
               <div className="space-y-6">
                 {/* User Progress - Only show if authenticated */}
                 {isAuthenticated && <ProgramProgress programId={program.id} />}
-
-                {/* Early Access Teaser Section - Only show if not premium */}
-                {!isPremium && (
-                  <div className="relative bg-gradient-to-r from-blue-50 to-green-50 dark:from-blue-900/20 dark:to-green-900/20 border-2 border-dashed border-blue-200 dark:border-blue-700 rounded-xl p-6 overflow-hidden">
-                    {/* Subtle animation background */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#4F8EF7]/5 to-[#25CB78]/5 animate-pulse"></div>
-
-                    <div className="relative z-10">
-                      <div className="flex items-start gap-4">
-                        <div className="flex-shrink-0">
-                          <div className="w-12 h-12 bg-gradient-to-r from-[#4F8EF7] to-[#25CB78] rounded-full flex items-center justify-center">
-                            <Trophy className="text-white" size={24} />
-                          </div>
-                        </div>
-
-                        <div className="flex-1">
-                          <div className="flex items-center gap-2 mb-2">
-                            <h3 className="text-lg font-bold text-gray-900 dark:text-white">{t("programs.important_info")}</h3>
-                          </div>
-
-                          <p className="text-sm text-gray-600 dark:text-gray-400  italic">💡 {t("programs.donation_teaser")}</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                )}
 
                 {/* Gamified Community Stats */}
                 <div className="bg-gradient-to-r from-[#4F8EF7]/10 to-[#25CB78]/10 border-2 border-[#4F8EF7]/20 rounded-xl p-4">
@@ -454,9 +423,7 @@ export function ProgramDetailPage({ program, isAuthenticated }: ProgramDetailPag
                           className={`bg-white dark:bg-gray-800 rounded-xl p-4 border-2 cursor-pointer transition-all duration-200 ease-in-out flex items-center gap-4 ${
                             isCompleted
                               ? "border-[#25CB78] bg-[#25CB78]/5"
-                              : session.isPremium
-                                ? "border-yellow-200 dark:border-yellow-800 bg-yellow-50/50 dark:bg-yellow-900/10 hover:border-yellow-300 hover:scale-[1.02]"
-                                : "border-[#25CB78]/20 hover:border-[#25CB78] hover:scale-[1.02]"
+                              : "border-[#25CB78]/20 hover:border-[#25CB78] hover:scale-[1.02]"
                           }`}
                           key={session.id}
                           onClick={() => {
@@ -467,23 +434,11 @@ export function ProgramDetailPage({ program, isAuthenticated }: ProgramDetailPag
                           <div className="relative">
                             <div
                               className={`w-8 sm:w-12 h-8 sm:h-12 rounded-xl flex items-center justify-center flex-shrink-0 font-bold text-white ${
-                                isCompleted
-                                  ? "bg-[#25CB78]"
-                                  : session.isPremium
-                                    ? isPremium
-                                      ? "bg-[#4F8EF7]"
-                                      : "bg-yellow-500"
-                                    : "bg-[#25CB78]"
+                                isCompleted ? "bg-[#25CB78]" : "bg-[#25CB78]"
                               }`}
                             >
                               {isCompleted ? (
                                 <CheckCircle2 size={18} />
-                              ) : session.isPremium ? (
-                                isPremium ? (
-                                  <Unlock size={18} />
-                                ) : (
-                                  <Lock size={18} />
-                                )
                               ) : (
                                 <span className="text-lg">{session.sessionNumber}</span>
                               )}
@@ -501,13 +456,8 @@ export function ProgramDetailPage({ program, isAuthenticated }: ProgramDetailPag
                                   {t("programs.completed")}
                                 </div>
                               )}
-                              {!isCompleted && !session.isPremium && (
+                              {!isCompleted && (
                                 <div className="bg-[#25CB78] text-white px-2 py-1 rounded-full text-xs font-bold">{t("programs.free")}</div>
-                              )}
-                              {!isCompleted && session.isPremium && (
-                                <div className="bg-yellow-500 text-white px-2 py-1 rounded-full text-xs font-bold">
-                                  {t("programs.premium")}
-                                </div>
                               )}
                             </div>
                             {sessionDescription && (
