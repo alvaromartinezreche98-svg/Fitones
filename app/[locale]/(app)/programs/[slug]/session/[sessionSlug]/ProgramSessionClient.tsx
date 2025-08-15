@@ -25,10 +25,9 @@ interface ProgramSessionClientProps {
   week: ProgramWeek;
   session: ProgramSessionWithExercises;
   isAuthenticated: boolean;
-  isPremium: boolean;
 }
 
-export function ProgramSessionClient({ program, week, session, isAuthenticated, isPremium }: ProgramSessionClientProps) {
+export function ProgramSessionClient({ program, week, session, isAuthenticated }: ProgramSessionClientProps) {
   const t = useI18n();
   const locale = useCurrentLocale();
   const router = useRouter();
@@ -48,8 +47,6 @@ export function ProgramSessionClient({ program, week, session, isAuthenticated, 
   // Access control context
   const accessContext = {
     isAuthenticated,
-    isPremium,
-    isSessionPremium: session.isPremium,
   };
 
   const handleStartWorkout = async () => {
