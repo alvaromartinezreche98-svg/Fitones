@@ -528,6 +528,10 @@ export default {
     title: "Novedades",
     release_notes: "Notas",
     notes: {
+      note_2025_08_15: {
+        title: "🗣️ Eliminada la selección de idioma",
+        content: "Se eliminó la posibilidad de cambiar el idioma; la interfaz ahora usa tu idioma predeterminado."
+      },
       note_2025_07_09: {
         title: "🎯 Selección de Ejercicios, Favoritos y Nuevas Herramientas",
         content:
