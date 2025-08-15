@@ -1388,6 +1388,10 @@ export default {
     title: "Nouveautés",
     release_notes: "Notes",
     notes: {
+      note_2025_08_15: {
+        title: "🗣️ Sélecteur de langue supprimé",
+        content: "Suppression de la possibilité de changer de langue ; l'interface utilise maintenant votre langue par défaut."
+      },
       note_2025_07_09: {
         title: "🎯 Sélection d'exercices, Favoris & Nouveaux Outils",
         content:

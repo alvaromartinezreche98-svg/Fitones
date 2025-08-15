@@ -1363,6 +1363,10 @@ export default {
     title: "What's New",
     release_notes: "Release Notes",
     notes: {
+      note_2025_08_15: {
+        title: "🗣️ Language selection removed",
+        content: "Removed ability to change language; interface now uses your default locale."
+      },
       note_2025_07_09: {
         title: "🎯 Exercise Selection, Favorites & New Tools",
         content:

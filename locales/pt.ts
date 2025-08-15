@@ -1367,6 +1367,10 @@ export default {
     title: "Novidades",
     release_notes: "Notas de Lançamento",
     notes: {
+      note_2025_08_15: {
+        title: "🗣️ Seleção de idioma removida",
+        content: "Removida a possibilidade de mudar o idioma; a interface agora usa seu idioma padrão."
+      },
       note_2025_07_09: {
         title: "🎯 Seleção de Exercícios, Favoritos e Novas Ferramentas",
         content:
