@@ -16,7 +16,7 @@ export default {
     workouts_per_week: "workouts/week",
     last_workout: "Last workout",
     page_title: "Champions Leaderboard",
-    page_subtitle: "Climb to the top and become a Workout.cool legend",
+    page_subtitle: "Climb to the top and become a fitones legend",
     period_all_time: "All Time",
     period_monthly: "Month",
     period_weekly: "Week",
@@ -89,8 +89,6 @@ export default {
     share_failed: "Share failed",
     premium_required_description: "This is a premium access. Upgrade to access all premium content.",
     important_info: "Important information",
-    donation_teaser:
-      "At first, we were running on donations. But as you can imagine, donations weren't sufficient to cover development and running costs. So we made you a package that will help us keep the lights on and unlock a few superpowers along the way.",
     new: "NEW",
     more_programs_coming_title: "More programs coming soon!",
     more_programs_coming_description:
@@ -115,7 +113,7 @@ export default {
     premium_required_title: "Premium Required",
     premium_required_subtitle: "This is a premium access. Upgrade to access all premium content.",
     premium_required_button: "Upgrade to Premium",
-    already_premium: "You're enjoying Workout.cool Premium",
+    already_premium: "You're enjoying fitones Premium",
     no_ads: "No ads",
     upgrade: "Upgrade",
 
@@ -285,7 +283,7 @@ export default {
     // FAQ
     faq: {
       title: "Frequently Asked Questions",
-      subtitle: "Everything you need to know about Workout.cool and our mission",
+      subtitle: "Everything you need to know about fitones and our mission",
       items: [
         {
           question: "Why pay if it's open-source?",
@@ -293,7 +291,7 @@ export default {
             "Excellent question! The code will always remain free, but maintaining servers, database and infrastructure costs money. Your contribution helps us keep the tool free for everyone. It's a win-win model: you get premium features, the community keeps free access!",
         },
         {
-          question: "Can I self-host Workout.cool?",
+          question: "Can I self-host fitones?",
           answer:
             "Absolutely! The entire codebase is available on GitHub under MIT license. You can deploy it on your own servers, customize it however you want, and use it completely free. Self-hosting gives you full control over your data and workout privacy.",
         },
@@ -340,7 +338,7 @@ export default {
       additional_support: {
         title: "Still have questions?",
         description: "Our fitness-focused community is here to help you succeed",
-        community: "Community support (discord or hello@workout.cool)",
+        community: "Community support (discord or hello@fitones)",
         discussions: "Open discussions (github/discord)",
         roadmap: "Transparent roadmap (github)",
       },
@@ -367,7 +365,7 @@ export default {
       ],
       quote: {
         text: "We believe fitness tools should be accessible to everyone. Your support helps us maintain this vision while continuing to innovate.",
-        author: "— The Workout.cool Team",
+        author: "— The fitones Team",
       },
     },
 
@@ -382,10 +380,8 @@ export default {
     premium_active_subtitle: "All features unlocked",
     free_intro_title: "You're already getting a lot for free...",
     free_intro_text:
-      "Workout.cool is a free, open-source fitness app used daily by 60,000+ users. It's built with love (not VC money ^^) and it costs us real time and money to keep it running.",
-    donation_story_text:
-      "At first, we were running on donations. But as you can imagine, donations weren't sufficient to cover development and running costs. So we made you a package that will help us keep the lights on and unlock a few superpowers along the way.",
-    health_upgrade_text: "If Workout.cool helps you level up your health, please consider going Premium :D !",
+      "fitones is a free, open-source fitness app used daily by 60,000+ users. It's built with love (not VC money ^^) and it costs us real time and money to keep it running.",
+    health_upgrade_text: "If fitones helps you level up your health, please consider going Premium :D !",
     unlock_features_text: "Unlock advanced features & support open-source fitness.",
     invest_yourself_quote: "Never skimp on fitness & books — invest in yourself !",
     support_mission: "Support the mission",
@@ -406,7 +402,7 @@ export default {
     thank_supporting: "Thank you for supporting.",
     no_pressure: "No pressure. You can upgrade anytime.",
     keep_pushing: "keep pushing ! huhu",
-    still_unsure: "Still not sure? No worries. Workout.cool will always remain free and open-source.",
+    still_unsure: "Still not sure? No worries. fitones will always remain free and open-source.",
     support_helps: "But if you believe in what we're building and you can afford it, your support will help 💚",
     self_hosting: "Self-hosting",
     community: "Community",
@@ -1347,9 +1343,6 @@ export default {
   register_title: "Create an account",
   register_description: "Enter your information below to create your account",
   register_terms: "By signing up, you agree to our",
-  register_privacy: "Privacy Policy",
-  register_privacy_link: "and our",
-  register_privacy_link_2: "Privacy Policy",
   password_forgot_title: "Forgot password?",
   password_forgot_subtitle: "Enter your email to reset your password",
   new_password: "New password",
@@ -1410,7 +1403,6 @@ export default {
       note_2025_06_23: {
         title: "🇵🇹 Portuguese Support & Donation Banner",
         content:
-          "The app now supports <strong>Portuguese</strong>! We've also added a <em>donation banner</em> to help support the ongoing costs of the project via <a href='https://github.com/sponsors/snouzy' target='_blank' rel='noopener' class='text-blue-500 hover:underline'>GitHub Sponsors</a> or <a href='https://ko-fi.com/workoutcool' target='_blank' rel='noopener' class='text-blue-500 hover:underline'>Ko-fi</a>. 🙏",
       },
       note_2025_06_22: {
         title: "🌍 New Languages & Performance Boost!",
@@ -1420,13 +1412,13 @@ export default {
       note_2025_06_19: {
         title: "📱 Now Available as a PWA!",
         content:
-          "Workout.cool v1.2 is now a Progressive Web App! Install it on your phone for a native app experience with offline access. 🚀",
+          "fitones v1.2 is now a Progressive Web App! Install it on your phone for a native app experience with offline access. 🚀",
       },
       note_2025_06_18: {
         title:
           "🚀 Featured #1 on <a href='https://news.ycombinator.com/item?id=44309320' target='_blank' rel='noopener' class='text-blue-500 hover:underline'>Hacker News</a>!",
         content:
-          "Workout.cool reached the top spot on Hacker News! Thanks to everyone for the amazing support and welcome to all the new users! 💪",
+          "fitones reached the top spot on Hacker News! Thanks to everyone for the amazing support and welcome to all the new users! 💪",
       },
       note_2025_06_01: {
         title: "🎉 New: Release Notes Dialog",
@@ -1440,19 +1432,16 @@ export default {
   },
 
   // Premium Upsell Alert
-  donation_alert: {
-    title: "Unlock advanced features with Workout.cool Premium",
+    title: "Unlock advanced features with fitones Premium",
     or: "or",
   },
 
   // Donation Modal
-  donation_modal: {
     support_via: "Support via...",
     title: "Support the project",
     congrats: "Congratulations on your workout! 🎉",
     subtitle: "This app helps you for free, but it has a real cost for me...",
     costs_title: "The reality of costs",
-    costs_description: "Currently, donations don't even cover basic costs: servers, authentication, infrastructure, database, etc.",
     open_source_title: "100% Open Source",
     open_source_description:
       "This app is completely free, ads free and open source. No profit is generated - it's a passion project to help the community and help people exercise.",
@@ -1461,7 +1450,6 @@ export default {
     impact_title: "Your impact",
     impact_3_euros: "• Even €3 covers 1 week of server",
     impact_support: "• Your support keeps the app free for everyone",
-    impact_footer: "Every donation, even small, makes a real difference! 🙏",
     later_button: "Later",
     support_button: "Support the project",
   },
@@ -1471,20 +1459,6 @@ export default {
   contact_support_subtitle: "Describe your issue and we'll help you as soon as possible. You can also write to us directly at",
 
   // Social Platforms
-  social_platforms: {
-    x: "X (Twitter)",
-    facebook: "Facebook",
-    email: "Email",
-    whatsapp: "WhatsApp",
-    website: "Website",
-    phone: "Phone",
-    youtube: "YouTube",
-    linkedin: "LinkedIn",
-    snapchat: "Snapchat",
-    instagram: "Instagram",
-    tiktok: "TikTok",
-    threads: "Threads",
-  },
 
   // Workout Builder
   workout_builder: {
@@ -1765,7 +1739,7 @@ export default {
     replace: "Replace",
     loading: "Loading...",
     image_deleted: "The image has been deleted",
-    discover_workoutcool: "Discover Workout Cool",
+    discover_workoutcool: "Discover fitones",
     received_just_now: "Received just now",
     copied: "Copied",
     url_copied: "The URL has been copied",
@@ -1789,12 +1763,10 @@ export default {
     go_to_home: "Go to home",
     go_to_profile: "Go to profile",
     terms: "Terms of Service",
-    privacy: "Privacy Policy",
     sales_terms: "Sales Terms",
     consent_banner: "We use cookies to improve your experience. By clicking Accept, you agree to our use of cookies.",
     about: "About us",
     profile: "Profile",
-    donate: "Donate",
     my_account: "My account",
     dashboard: "Dashboard",
     home: "Home",

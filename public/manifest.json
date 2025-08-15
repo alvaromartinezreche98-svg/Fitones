@@ -34,10 +34,10 @@
     }
   ],
   "lang": "en",
-  "name": "Workout Cool",
+  "name": "fitones",
   "orientation": "portrait",
   "scope": "/",
-  "short_name": "Workout Cool",
+  "short_name": "fitones",
   "start_url": "/",
   "theme_color": "#FF5722"
 }

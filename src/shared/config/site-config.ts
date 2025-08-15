@@ -1,5 +1,5 @@
 export const SiteConfig = {
-  title: "Workout Cool",
+  title: "fitones",
   description: "Modern fitness coaching platform with comprehensive exercise database",
   keywords: [
     "fitness",
@@ -13,26 +13,25 @@ export const SiteConfig = {
     "workout planner",
     "exercise database",
   ],
-  prodUrl: "https://workout.cool",
+  prodUrl: "https://fitones",
   logo: "/images/logo.png",
-  domain: "workout.cool",
+  domain: "fitones",
   appIcon: "/images/logo4.jpg",
   company: {
-    name: "Workout Cool",
+    name: "fitones",
     address: "34 avenue des champ Elysée 75008 Paris, France",
   },
   brand: {
     primary: "#007291",
   },
   email: {
-    from: "Workout Cool <hello@workout.cool>",
-    contact: "hello@workout.cool",
+    from: "fitones <hello@fitones>",
+    contact: "hello@fitones",
   },
   maker: {
-    image: "https://workout.cool/images/me/twitter-en.jpg",
-    website: "https://workout.cool",
-    twitter: "https://twitter.com/workout_cool",
-    name: "Workout Cool",
+    image: "",
+    website: "",
+    name: "Hossein Zare",
   },
   auth: {
     password: false,
@@ -42,8 +41,7 @@ export const SiteConfig = {
       width: 1200,
       height: 630,
     },
-    twitterHandle: "@snouzy_biceps",
-    applicationName: "Workout Cool",
+    applicationName: "fitones",
     category: "fitness",
     classification: "Fitness & Health",
   },

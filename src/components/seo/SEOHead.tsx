@@ -144,21 +144,6 @@ export function generateSEOMetadata({
       ],
       type: ogType,
     },
-    twitter: {
-      card: "summary_large_image",
-      site: SiteConfig.seo.twitterHandle,
-      creator: SiteConfig.seo.twitterHandle,
-      title: fullTitle,
-      description: finalDescription,
-      images: [
-        {
-          url: finalOgImage,
-          width: SiteConfig.seo.ogImage.width,
-          height: SiteConfig.seo.ogImage.height,
-          alt: title || SiteConfig.title,
-        },
-      ],
-    },
   };
 }
 

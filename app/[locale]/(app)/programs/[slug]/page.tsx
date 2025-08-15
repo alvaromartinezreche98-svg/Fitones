@@ -46,12 +46,6 @@ export async function generateMetadata({ params }: ProgramDetailPageProps): Prom
         },
       ],
     },
-    twitter: {
-      card: "summary_large_image",
-      title: `${localizedTitle} - ${localizedData.title}`,
-      description: localizedDescription,
-      images: [program.image],
-    },
   };
 }
 

@@ -146,31 +146,16 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       ],
       type: "website",
     },
-    twitter: {
-      card: "summary_large_image",
-      site: SiteConfig.seo.twitterHandle,
-      creator: SiteConfig.seo.twitterHandle,
-      title: localizedData.title,
-      description: localizedData.description,
-      images: [
-        {
-          url: `${getServerUrl()}/images/default-og-image_${locale === "zh-CN" ? "zh" : locale}.jpg`,
-          width: SiteConfig.seo.ogImage.width,
-          height: SiteConfig.seo.ogImage.height,
-          alt: localizedData.ogAlt,
-        },
-      ],
-    },
     alternates: {
-      canonical: "https://www.workout.cool",
+      canonical: "https://www.fitones",
       languages: {
-        "fr-FR": "https://www.workout.cool/fr",
-        "en-US": "https://www.workout.cool/en",
-        "es-ES": "https://www.workout.cool/es",
-        "pt-PT": "https://www.workout.cool/pt",
-        "ru-RU": "https://www.workout.cool/ru",
-        "zh-CN": "https://www.workout.cool/zh-CN",
-        "x-default": "https://www.workout.cool",
+        "fr-FR": "https://www.fitones/fr",
+        "en-US": "https://www.fitones/en",
+        "es-ES": "https://www.fitones/es",
+        "pt-PT": "https://www.fitones/pt",
+        "ru-RU": "https://www.fitones/ru",
+        "zh-CN": "https://www.fitones/zh-CN",
+        "x-default": "https://www.fitones",
       },
     },
     authors: [{ name: SiteConfig.company.name, url: getServerUrl() }],
@@ -257,7 +242,7 @@ export default async function RootLayout({ params, children }: RootLayoutProps) 
           {/* PWA Meta Tags */}
           <meta content="yes" name="apple-mobile-web-app-capable" />
           <meta content="default" name="apple-mobile-web-app-status-bar-style" />
-          <meta content="Workout Cool" name="apple-mobile-web-app-title" />
+          <meta content="fitones" name="apple-mobile-web-app-title" />
           <meta content="yes" name="mobile-web-app-capable" />
           <meta content="#FF5722" name="msapplication-TileColor" />
           <meta content="/android-chrome-192x192.png" name="msapplication-TileImage" />
@@ -269,13 +254,13 @@ export default async function RootLayout({ params, children }: RootLayoutProps) 
           <link as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="preload" />
 
           {/* Alternate hreflang for i18n */}
-          <link href="https://www.workout.cool/fr" hrefLang="fr" rel="alternate" />
-          <link href="https://www.workout.cool/en" hrefLang="en" rel="alternate" />
-          <link href="https://www.workout.cool/es" hrefLang="es" rel="alternate" />
-          <link href="https://www.workout.cool/pt" hrefLang="pt" rel="alternate" />
-          <link href="https://www.workout.cool/ru" hrefLang="ru" rel="alternate" />
-          <link href="https://www.workout.cool/zh-CN" hrefLang="zh-CN" rel="alternate" />
-          <link href="https://www.workout.cool" hrefLang="x-default" rel="alternate" />
+          <link href="https://www.fitones/fr" hrefLang="fr" rel="alternate" />
+          <link href="https://www.fitones/en" hrefLang="en" rel="alternate" />
+          <link href="https://www.fitones/es" hrefLang="es" rel="alternate" />
+          <link href="https://www.fitones/pt" hrefLang="pt" rel="alternate" />
+          <link href="https://www.fitones/ru" hrefLang="ru" rel="alternate" />
+          <link href="https://www.fitones/zh-CN" hrefLang="zh-CN" rel="alternate" />
+          <link href="https://www.fitones" hrefLang="x-default" rel="alternate" />
 
           {/* Theme color for PWA */}
           <meta content="#FF5722" name="theme-color" />
