@@ -16,7 +16,7 @@ export default {
     workouts_per_week: "treinos/semana",
     last_workout: "Último treino",
     page_title: "Classificação dos Campeões",
-    page_subtitle: "Suba ao topo e torne-se uma lenda do Workout.cool",
+    page_subtitle: "Suba ao topo e torne-se uma lenda do fitones",
     period_all_time: "Global",
     period_monthly: "Mês",
     period_weekly: "Semana",
@@ -89,7 +89,6 @@ export default {
     copied_to_clipboard: "Link copiado!",
     share_failed: "Erro ao compartilhar",
     important_info: "Informações importantes",
-    donation_teaser:
       "No início, funcionávamos com doações. Mas como pode imaginar, as doações não foram suficientes para cobrir os custos de desenvolvimento e funcionamento. Então criámos um pacote que nos ajudará a manter as luzes acesas e desbloquear alguns superpoderes pelo caminho.",
     new: "NOVO",
     more_programs_coming_title: "Mais programas em breve!",
@@ -115,7 +114,7 @@ export default {
     premium_required_title: "Premium Obrigatório",
     premium_required_subtitle: "Este é um acesso premium. Atualize para Premium para aceder a todo o conteúdo premium.",
     premium_required_button: "Atualizar para Premium",
-    already_premium: "Está a desfrutar do Workout.cool Premium",
+    already_premium: "Está a desfrutar do fitones Premium",
     no_ads: "Sem anúncios",
     upgrade: "Atualizar",
 
@@ -312,7 +311,7 @@ export default {
     // FAQ
     faq: {
       title: "Perguntas frequentes",
-      subtitle: "Tudo o que precisa de saber sobre Workout.cool e a nossa missão",
+      subtitle: "Tudo o que precisa de saber sobre fitones e a nossa missão",
       items: [
         {
           question: "Porque pagar se é open-source?",
@@ -320,7 +319,7 @@ export default {
             "Excelente pergunta! O código sempre permanecerá gratuito, mas manter servidores, base de dados e infraestrutura custa dinheiro. A sua contribuição ajuda-nos a manter a ferramenta gratuita para todos. É um modelo vantajoso: você obtém funcionalidades premium, a comunidade mantém acesso gratuito!",
         },
         {
-          question: "Posso auto-hospedar o Workout.cool?",
+          question: "Posso auto-hospedar o fitones?",
           answer:
             "Absolutamente! Todo o código está disponível no GitHub sob licença MIT. Pode implantá-lo em seus próprios servidores, personalizá-lo como quiser e usá-lo completamente gratuitamente. Auto-hospedagem dá-lhe controlo total sobre os seus dados e privacidade do treino.",
         },
@@ -367,7 +366,7 @@ export default {
       additional_support: {
         title: "Ainda tem perguntas?",
         description: "A nossa comunidade focada no fitness está aqui para ajudar-lhe a ter sucesso",
-        community: "Suporte comunitário (discord ou hello@workout.cool)",
+        community: "Suporte comunitário (discord ou hello@fitones)",
         discussions: "Discussões abertas (github/discord)",
         roadmap: "Roadmap transparente (github)",
       },
@@ -394,7 +393,7 @@ export default {
       ],
       quote: {
         text: "Acreditamos que as ferramentas de fitness devem ser acessíveis a todos. O seu apoio ajuda-nos a manter esta visão enquanto continuamos a inovar.",
-        author: "— A equipa Workout.cool",
+        author: "— A equipa fitones",
       },
     },
 
@@ -409,10 +408,9 @@ export default {
     premium_active_subtitle: "Todos os recursos desbloqueados",
     free_intro_title: "Já está a receber muito gratuitamente...",
     free_intro_text:
-      "Workout.cool é uma aplicação de fitness gratuita e open source usada diariamente por mais de 60.000 utilizadores. É construída com amor (não com dinheiro de VC ^^) e custa-nos tempo e dinheiro real mantê-la a funcionar.",
-    donation_story_text:
+      "fitones é uma aplicação de fitness gratuita e open source usada diariamente por mais de 60.000 utilizadores. É construída com amor (não com dinheiro de VC ^^) e custa-nos tempo e dinheiro real mantê-la a funcionar.",
       "No início, funcionávamos com doações. Mas como pode imaginar, as doações não foram suficientes para cobrir os custos de desenvolvimento e funcionamento. Então criámos um pacote que nos ajudará a manter as luzes acesas e desbloquear alguns superpoderes pelo caminho.",
-    health_upgrade_text: "Se o Workout.cool o ajuda a melhorar a sua saúde, por favor considere tornar-se Premium :D !",
+    health_upgrade_text: "Se o fitones o ajuda a melhorar a sua saúde, por favor considere tornar-se Premium :D !",
     unlock_features_text: "Desbloqueie recursos avançados e apoie o fitness open source",
     invest_yourself_quote: "Nunca poupe em fitness e livros — invista em si mesmo!",
     support_mission: "Apoiar a missão",
@@ -433,7 +431,7 @@ export default {
     thank_supporting: "Obrigado pelo seu apoio.",
     no_pressure: "Sem pressão. Pode fazer upgrade a qualquer momento.",
     keep_pushing: "continue a esforçar-se! huhu",
-    still_unsure: "Ainda não tem certeza? Sem problemas. O Workout.cool permanecerá sempre gratuito e open source.",
+    still_unsure: "Ainda não tem certeza? Sem problemas. O fitones permanecerá sempre gratuito e open source.",
     support_helps: "Mas se acredita no que estamos a construir e pode pagar, o seu apoio ajudará 💚",
     self_hosting: "Auto-hospedagem",
     community: "Comunidade",
@@ -1351,9 +1349,6 @@ export default {
   register_title: "Criar conta",
   register_description: "Insira os seus dados abaixo para criar uma conta",
   register_terms: "Ao registar-se, concorda com os nossos",
-  register_privacy: "Termos e Condições",
-  register_privacy_link: "e com a nossa",
-  register_privacy_link_2: "Política de Privacidade",
   password_forgot_title: "Esqueceu-se da palavra-passe?",
   password_forgot_subtitle: "Insira o seu email para redefinir a palavra-passe",
   new_password: "Nova palavra-passe",
@@ -1424,13 +1419,13 @@ export default {
       note_2025_06_19: {
         title: "📱 Agora disponível como PWA!",
         content:
-          "O Workout.cool v1.2 já é uma Progressive Web App! Instale-a no seu telemóvel para uma experiência de aplicação nativa com acesso offline. 🚀",
+          "O fitones v1.2 já é uma Progressive Web App! Instale-a no seu telemóvel para uma experiência de aplicação nativa com acesso offline. 🚀",
       },
       note_2025_06_18: {
         title:
           "🚀 Nº 1 em destaque no <a href='https://news.ycombinator.com/item?id=44309320' target='_blank' rel='noopener' class='text-blue-500 hover:underline'>Hacker News</a>!",
         content:
-          "O Workout.cool chegou ao primeiro lugar no Hacker News! Obrigado a todos pelo apoio incrível e bem-vindos todos os novos utilizadores! 💪",
+          "O fitones chegou ao primeiro lugar no Hacker News! Obrigado a todos pelo apoio incrível e bem-vindos todos os novos utilizadores! 💪",
       },
       note_2025_06_01: {
         title: "🎉 Novo: Dialogo de Notas de Lançamento",
@@ -1444,13 +1439,11 @@ export default {
   },
 
   // Premium Upsell Alert
-  donation_alert: {
-    title: "Desbloqueie funcionalidades avançadas com Workout.cool Premium",
+    title: "Desbloqueie funcionalidades avançadas com fitones Premium",
     or: "ou",
   },
 
   // Donation Modal
-  donation_modal: {
     support_via: "Apoiar via...",
     title: "Apoiar o projeto",
     congrats: "Parabéns pelo seu treino! 🎉",
@@ -1476,20 +1469,6 @@ export default {
   contact_support_subtitle: "Descreva o seu problema e iremos ajudá-lo o mais rápido possível. Também pode escrever-nos diretamente para",
 
   // Social Platforms
-  social_platforms: {
-    x: "X (Twitter)",
-    facebook: "Facebook",
-    email: "Email",
-    whatsapp: "WhatsApp",
-    website: "Website",
-    phone: "Telefone",
-    youtube: "YouTube",
-    linkedin: "LinkedIn",
-    snapchat: "Snapchat",
-    instagram: "Instagram",
-    tiktok: "TikTok",
-    threads: "Threads",
-  },
 
   // Workout Builder
   workout_builder: {
@@ -1768,7 +1747,7 @@ export default {
     replace: "Substituir",
     loading: "A carregar...",
     image_deleted: "A imagem foi eliminada",
-    discover_workoutcool: "Descubra o Workout Cool",
+    discover_workoutcool: "Descubra o fitones",
     received_just_now: "Recebido agora mesmo",
     copied: "Copiado",
     url_copied: "A URL foi copiada",
@@ -1792,12 +1771,10 @@ export default {
     go_to_home: "Ir para o início",
     go_to_profile: "Ir para o perfil",
     terms: "Termos de Serviço",
-    privacy: "Política de Privacidade",
     sales_terms: "Termos de Venda",
     consent_banner: "Utilizamos cookies para melhorar a sua experiência. Ao clicar em Aceitar, concorda com a nossa utilização de cookies.",
     about: "Sobre nós",
     profile: "Perfil",
-    donate: "Doar",
     my_account: "A minha conta",
     dashboard: "Dashboard",
     home: "Início",

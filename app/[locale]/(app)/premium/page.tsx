@@ -8,14 +8,9 @@ export const metadata: Metadata = {
     "Join thousands of fitness enthusiasts who believe in open-source training freedom. Support our mission while unlocking advanced features.",
   keywords: ["premium", "fitness", "workout", "open-source", "subscription", "training"],
   openGraph: {
-    title: "Premium Plans - Support the Workout.cool Mission 💪",
+    title: "Premium Plans - Support the fitones Mission 💪",
     description: "For passionate fitness enthusiasts who believe in open-source and training freedom. Core features always free!",
     type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Premium Plans - Workout.cool",
-    description: "Train freely, support the mission. Join the passionate fitness community!",
   },
 };
 

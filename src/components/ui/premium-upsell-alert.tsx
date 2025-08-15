@@ -43,7 +43,7 @@ export const PremiumUpsellAlert = ({ className }: PremiumUpsellAlertProps) => {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3 w-full">
           <div className="flex items-center gap-3">
             <Zap className="h-5 w-5 text-yellow-600 dark:text-yellow-400 flex-shrink-0" />
-            <span className="text-base font-medium text-gray-900 dark:text-gray-100">{t("donation_alert.title")}</span>
+            <span className="text-base font-medium text-gray-900 dark:text-gray-100">{t("premium.upgrade")}</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="flex items-center gap-1 text-sm text-gray-600 dark:text-gray-400">

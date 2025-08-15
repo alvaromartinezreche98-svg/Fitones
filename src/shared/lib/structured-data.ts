@@ -106,7 +106,7 @@ export function generateStructuredData({
       return {
         ...baseStructuredData,
         "@type": "WebSite",
-        sameAs: [SiteConfig.maker.twitter, `${baseUrl}`],
+        sameAs: [`${baseUrl}`],
       };
 
     case "WebApplication":
@@ -191,7 +191,7 @@ export function generateStructuredData({
           contactType: "customer service",
           availableLanguage: ["French", "English", "Spanish", "Portuguese", "Russian", "Chinese"],
         },
-        sameAs: [SiteConfig.maker.twitter],
+        sameAs: [],
         foundingDate: "2024",
         description: localizedData.description,
       };

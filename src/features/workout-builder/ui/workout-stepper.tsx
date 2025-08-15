@@ -11,8 +11,6 @@ import Trophy from "@public/images/trophy.png";
 import useBoolean from "@/shared/hooks/useBoolean";
 import { WorkoutSessionSets } from "@/features/workout-session/ui/workout-session-sets";
 import { WorkoutSessionHeader } from "@/features/workout-session/ui/workout-session-header";
-import { DonationModal } from "@/features/workout-session/ui/donation-modal";
-import { useDonationModal } from "@/features/workout-session/hooks/use-donation-modal";
 import { WorkoutBuilderFooter } from "@/features/workout-builder/ui/workout-stepper-footer";
 import { env } from "@/env";
 import { Button } from "@/components/ui/button";
@@ -147,7 +145,6 @@ export function WorkoutStepper() {
   };
 
   const [showCongrats, setShowCongrats] = useState(false);
-  const { showModal, openModal, closeModal } = useDonationModal();
 
   const goToProfile = () => {
     router.push("/profile");
@@ -155,10 +152,6 @@ export function WorkoutStepper() {
 
   const handleCongrats = () => {
     setShowCongrats(true);
-    // Show donation modal after congrats screen appears
-    setTimeout(() => {
-      openModal();
-    }, 400);
   };
 
   const handleToggleEquipment = (equipment: ExerciseAttributeValueEnum) => {
@@ -192,7 +185,6 @@ export function WorkoutStepper() {
           <Button onClick={goToProfile}>{t("commons.go_to_profile")}</Button>
         </div>
         {/* Donation Modal */}
-        <DonationModal isOpen={showModal} onClose={closeModal} />
       </>
     );
   }

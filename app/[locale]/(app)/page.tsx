@@ -40,11 +40,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         },
       ],
     },
-    twitter: {
-      title: `${title} | ${SiteConfig.title}`,
-      description,
-      images: [`${getServerUrl()}/images/default-og-image_${locale}.jpg`],
-    },
   };
 }
 
